@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Script.sol";
-import {Exec} from "forge-exec/src/Exec.sol";
+import {Exec} from "forge-exec/Exec.sol";
 
 contract CounterScript is Script {
     function setUp() public {}

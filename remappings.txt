@@ -1,0 +1,2 @@
+forge-std/=lib/forge-std/src/
+forge-exec/=lib/forge-exec/src/
