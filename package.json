@@ -3,11 +3,14 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "forge-exec-ipc-client": "^0.1.1",
     "forge-exec-ipc-server": "0.1.12",
+    "forge-ts": "^0.0.2",
     "viem": "^0.3.14"
   },
   "scripts": {
-    "execute": "forge script script/Counter.s.sol -vvvvv",
-    "test": "forge test"
+    "execute": "forge compile && forge-ts contracts js && forge script script/Counter.s.sol -vvvvv",
+    "compile": "forge compile && forge-ts contracts js",
+    "test": "forge compile && forge-ts contracts && forge test"
   }
 }
