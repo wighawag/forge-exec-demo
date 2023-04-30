@@ -1,0 +1,13 @@
+{
+  "name": "forge-exec-demo",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "forge-exec-ipc-server": "0.1.12",
+    "viem": "^0.3.14"
+  },
+  "scripts": {
+    "execute": "forge script script/Counter.s.sol -vvvvv",
+    "test": "forge test"
+  }
+}
